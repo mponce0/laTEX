@@ -1,0 +1,184 @@
+\documentclass[dvipsnames,aspectratio=169]{beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[xcolor]{colortbl}
+\usepackage{pict2e}
+\usepackage{setspace}
+\usepackage{multimedia}
+
+%\usepackage{MnSymbol}
+
+%\usepackage{tikz}
+%\usetikzlibrary{arrows,shapes}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{listings}
+
+\lstset{ %
+  language=python,                     % the language of the code
+  basicstyle=\tiny\tt,  %\footnotesize,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{black!15},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=true,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{OliveGreen},   % comment style
+  %variablestyle=\color{red},
+  stringstyle=\color{MidnightBlue},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  emph={\{, \}}, emphstyle=\color{red}
+}
+
+\usepackage{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{comment}
+\newcommand{\skipit}[1]{}
+\newcommand{\rowcolors}[4][]{\relax}
+%\newcommand{\titlestyle}{\bf\color{black}\LARGE}
+\newcommand{\titlestyle}{\bf\LARGE}
+%\newcommand{\partstyle}{\bf\large}
+%\newcommand{\asection}[2]{\ \par\centerline{\color{Blue}\Large #2\vspace{2mm}}}
+%\newcommand{\topsection}[2]{\ \vspace{-8pt}\\\centerline{\color{Blue}\Large #2\vspace{2mm}}}
+\newcommand{\continue}{\color{black}}
+%\newcommand{\picfit}[1]{\includegraphics[width=0.98\columnwidth]{#1}}
+%\newcommand{\picnat}[1]{\includegraphics[scale=0.25]{#1}}
+
+%puts a zero-sized picture command at the current point
+%\newcommand{\pichere}[1]{\begin{picture}(0,0)\thicklines #1\end{picture}}
+
+\newcommand{\some}[1]{{\ttit #1}}
+%\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% this is to make the equations use the correct font
+\usefonttheme{professionalfonts}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\mode<presentation>{
+%  \usetheme{Warsaw}
+%  \usetheme{Boadilla}
+\usetheme[progressbar=foot]{metropolis}
+%  \usetheme{Hannover}
+ \setbeamertemplate{navigation symbols}{} % suppress nav bar
+%  \logo{\pichere{\put(-55,-5){\includegraphics[scale=0.08]{../logos/SciNet_newLogo-transp2wShadow.png}}}}%
+%\logo{\pichere{\put(-55,-55){\includegraphics[scale=10.1]{scinet-logo.png}}}}
+%  \usecolortheme{lilly}
+%  \usecolortheme{magpie}
+\usecolortheme[snowy]{owl}
+% DARK THEME
+%\usecolortheme[]{owl}
+%\usecolortheme[metropolis]{owl}
+}
+
+%\setbeamertemplate{frametitle}{  {\vspace{0.5cm}\titlestyle\insertframetitle} }
+%\setbeamertemplate{parttitle}{  {\titlestyle \insertparttitle} }
+
+%\setbeamertemplate{frame footer}{\insertauthor \insertshorttitle \insertdate}
+
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=gray}
+
+
+\setbeamercolor{mycolor1}{fg=black,bg=gray!20}
+\setbeamercolor{mycolor2}{fg=black,bg=gray!50}
+\setbeamercolor{mycolor3}{fg=black,bg=gray!20}
+\setbeamercolor{mycolor4}{fg=black,bg=gray!60}
+%
+\setbeamercolor{upcol}{fg=black,bg=gray}
+\setbeamercolor{lowcol}{fg=black,bg=gray!40}
+
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor1}%{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertauthor%\insertshortauthor
+  \end{beamercolorbox}%
+%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor2}%{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+  \end{beamercolorbox}%
+%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor3}%{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshortdate\hspace*{3em}
+  \end{beamercolorbox}%
+%
+  \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor4}%{title in head/foot}%
+    %\usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{./auxtex/dbt}
+
+%\input{./auxtex/mycolours}
+%\input{./auxtex/shellnewcommands}
+%\input{./auxtex/environments}
+%\input{./auxtex/Rnewcommands}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% set bold tt and math fonts
+\boldmath
+\font\ttrm = cmtt8
+%\font\ttbf = cmbtt8
+\font\ttbf = cmb10
+\font\ttl = cmtt10
+\font\ttit = cmitt9
+\renewcommand{\tt}{\ttrm}
+\renewcommand{\texttt}[1]{{\ttl #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{material}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
+
