@@ -1,7 +1,10 @@
 # basic-beamer-template
 Basic beamer/latex template for slides
 
-## Features
+
+## THEME
+* Using `metropolis` theme -- https://github.com/matze/mtheme
+
 * light/dark background:
 ```
 % LIGHT THEME
@@ -10,8 +13,10 @@ Basic beamer/latex template for slides
 % DARK THEME
 \usecolortheme[]{owl}
 ```
-* More beamer (old) themes:
+
+* More beamer (older) themes:
   https://hartwork.org/beamer-theme-matrix/
+
 
 ## Packages
 * `Listings` -- for including code in slides, see configuration in main wrapper
