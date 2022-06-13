@@ -9,7 +9,7 @@ JUNK=.aux .bbl .blg .brf .dvi .log .nav .out .ps .snm .vrb .tex.backup .tex.bak 
 
 .PHONY: clean
 
-all: $(TARGET) distribute clean 
+all: $(TARGET) #distribute clean 
 
 $(TARGET): $(SOURCE) *tex 
 	@pdflatex $(SOURCE)
