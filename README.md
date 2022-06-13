@@ -15,4 +15,4 @@ Basic beamer/latex template for slides
 
 ## Packages
 * `Listings` -- for including code in slides, see configuration in main wrapper
-* `verbatim` -- for deeclaring blocks of comments
+* `verbatim` -- for defining blocks of comments
