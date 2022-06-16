@@ -1,11 +1,16 @@
 NAME=lecture_wrapper
 TARGET=$(NAME).pdf
 SOURCE=$(NAME).tex
+# name of the PDF file that will be generated
 LECTURE="lecture_SLIDES.pdf"
 
-REPO="../UTSC-CS_lectures--REPO"
+# location of repository where to commit changes in main lecture
+REPO="."
 
+# files to clean up
 JUNK=.aux .bbl .blg .brf .dvi .log .nav .out .ps .snm .vrb .tex.backup .tex.bak .toc Notes.bib .spl
+
+
 
 .PHONY: clean
 
