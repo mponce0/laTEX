@@ -1,4 +1,5 @@
 # LaTEX repository
+templates, resources and references
 
 
 ## LaTEX Examples
