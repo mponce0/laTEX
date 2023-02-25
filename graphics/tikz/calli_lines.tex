@@ -1,0 +1,22 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{comment}
+\usepackage{tikz}
+%\usepackage{calligraphy}
+\usetikzlibrary{calligraphy}
+\usepackage{spath3}
+
+\newcommand{\myruleCallig}{
+\begin{center}
+\begin{tikzpicture}[line width=1pt]
+\pen (0,0);
+\useasboundingbox (-3,-1) rectangle (3,2);
+\calligraphy (0,0) .. controls +(100:1) and +(90:1) .. ++(-2,.5) ++(0,0) .. controls +(-90:2) and +(90:2) .. ++(4,0) ++(0,0) .. controls +(-90:2) and +(90:2) .. ++(-4,.5) ++(0,0) .. controls +(-90:2) and +(90:2) .. ++(4,0);
+\end{tikzpicture}
+\end{center}
+}
+%\end{comment}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
