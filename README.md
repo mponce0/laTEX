@@ -4,9 +4,8 @@ templates, resources and references
 
 ## LaTEX Examples
 
-  - beamer/slides
-
-  - tikz graphics
+  - (beamer/slides](beamer-slides/)
+  - (tikz graphics)[]
 
 
 ## Resources
