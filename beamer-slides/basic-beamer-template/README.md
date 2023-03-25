@@ -6,7 +6,7 @@ Basic beamer/latex template for slides
 * Using `metropolis` theme -- https://github.com/matze/mtheme
 
 * light/dark background:
-```
+```latex
 % LIGHT THEME
 \usecolortheme[snowy]{owl}
 
