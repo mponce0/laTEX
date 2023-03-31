@@ -20,6 +20,11 @@ Basic beamer/latex template for slides
 
 ## Recipes
 
+### Trimming images
+```latex
+  \includegraphics[width=\columnwidth, clip=true,trim=l b r t]{figs/fig}
+```
+
 ### for adding an image in the background of the slides:
   - includes translucid effect, which requires the `transparent` package
 ```latex
