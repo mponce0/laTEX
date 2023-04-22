@@ -22,13 +22,13 @@ $(TARGET): $(SOURCE) *tex
 	###
 	#@bibtex $(NAME)
 	# check individual cases of bibliography files
-        [[ -f refs.bib && -f biblio.bib ]] && bibtex $(name) || echo "BIB file not found!"
-        # check for any BIB file
-        if [ -f *.bib ]; then\
-                for i in *bib; do \
-                        [[ -f $$i ]] && bibtex $(name);\
-                done;\
-        fi
+	[[ -f refs.bib && -f biblio.bib ]] && bibtex $(name) || echo "BIB file not found!"
+	# check for any BIB file
+	if [ -f *.bib ]; then\
+		for i in *bib; do \
+			[[ -f $$i ]] && bibtex $(name);\
+		done;\
+	fi
 	###
 	@pdflatex $(SOURCE)
 
