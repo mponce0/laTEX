@@ -18,8 +18,18 @@ all: $(TARGET) #distribute clean
 
 $(TARGET): $(SOURCE) *tex 
 	@pdflatex $(SOURCE)
+	@pdflatex $(SOURCE)
+	###
 	#@bibtex $(NAME)
-	#@pdflatex $(SOURCE)
+	# check individual cases of bibliography files
+        [[ -f refs.bib && -f biblio.bib ]] && bibtex $(name) || echo "BIB file not found!"
+        # check for any BIB file
+        if [ -f *.bib ]; then\
+                for i in *bib; do \
+                        [[ -f $$i ]] && bibtex $(name);\
+                done;\
+        fi
+	###
 	@pdflatex $(SOURCE)
 
 clean:
