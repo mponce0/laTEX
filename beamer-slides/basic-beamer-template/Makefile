@@ -46,7 +46,7 @@ $(TARGET): $(SOURCE) *tex
 	# check individual cases of bibliography files
 	[[ -f refs.bib && -f biblio.bib ]] && $(BIBTEX) $(NAME) || echo "BIB file not found!"
 	# check for any BIB file
-	if [ -f *.bib ]; then \
+	if [[ -f *.bib ]]; then \
 		for i in *bib; do \
 			if [[ -f $$i ]]; then	\
 				 $(BIBTEX) $(NAME); \
