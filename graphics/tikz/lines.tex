@@ -40,6 +40,49 @@
 }
 \makeatother
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% https://tex.stackexchange.com/questions/143070/drawing-randomly-ragged-lines-in-technical-drawings
+
+% irregular line
+\usepackage{tikz}
+\usepackage{xparse}
+\usetikzlibrary{calc}
+
+\NewDocumentCommand{\irregularline}{%
+  O     {2mm}   % Amplitude of irregularity. Optional. Default value = 2mm
+  m             % First point
+  m             % Second point
+  D   <> {20}   % Number of peaks. Optional. Default value = 20
+}{{%
+  \coordinate (old) at #2;
+  \foreach \i in {1,2,...,#4}{
+    \draw (old) -- ($ ($#2!\i/(#4+1)!#3$) + (0,#1*rand) $) coordinate (old);
+  }
+  \draw (old) -- #3;
+}}
+
+
+% pencil like
+\usetikzlibrary{decorations.pathmorphing}
+
+\newcommand{\none}{
+\begin{tikzpicture}[pencildraw/.style={
+    black!85,
+    decorate,
+    decoration={random steps,segment length=1.8pt,amplitude=0.3pt}
+    }
+]
+\draw[pencildraw] (0,1) -- (2,1);
+\end{tikzpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 
@@ -81,6 +124,16 @@
 
 
 %%%%
+
+\none
+
+\begin{tikzpicture}
+  \irregularline{(0,0)}{(5,5)}
+  \irregularline[1mm]{(1,0)}{(6,5)}
+  \irregularline[1mm]{(2,0)}{(7,5)}<100>
+\end{tikzpicture}
+
+%%%%%
 
 % example from https://mirror.las.iastate.edu/tex-archive/graphics/pgf/contrib/spath3/calligraphy.pdf
 
