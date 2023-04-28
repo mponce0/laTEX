@@ -1,4 +1,7 @@
 \documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % \url{https://tex.stackexchange.com/q/427775/86}
 
 \usepackage{tikz}
@@ -76,9 +79,9 @@
 ]
 \draw[pencildraw] (0,1) -- (2,1);
 \end{tikzpicture}
+}
 
-
-% pencilline
+% pencilline  --  https://texample.net/tikz/examples/hand-drawn-lines/
 \usetikzlibrary{calc,decorations.pathmorphing,patterns}
 \pgfdeclaredecoration{penciline}{initial}{
     \state{initial}[width=+\pgfdecoratedinputsegmentremainingdistance,
@@ -109,8 +112,11 @@
 \end{tikzpicture}
 }   
     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-}
+% Other Refs.:
+%	https://tex.stackexchange.com/questions/39296/simulating-hand-drawn-lines
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
