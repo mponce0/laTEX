@@ -8,6 +8,15 @@ templates, resources and references
   - [tikz graphics](graphics/tikz)
 
 
+## Packages
+
+| Package        |                                    |    url     |
+|----------------|------------------------------------|------------|
+| `listings`     | to include listings of source code |            |
+| `tikz-timing`  | for drawing timing diagrams        |            |
+| `quantikz`     | for drawing quantum circuits       |  https://ctan.org/pkg/quantikz?lang=en  |
+
+
 ## Resources
  - [LaTEX wiki](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings)
  - https://nasa.github.io/nasa-latex-docs/html/
