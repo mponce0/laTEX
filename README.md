@@ -15,6 +15,8 @@ templates, resources and references
 | `listings`     | to include listings of source code |            |
 | `tikz-timing`  | for drawing timing diagrams        |            |
 | `quantikz`     | for drawing quantum circuits       |  https://ctan.org/pkg/quantikz?lang=en  |
+| `circuitikzgit`| for drawing electronic circuits    |  https://texdoc.org/serve/circuitikz/0  |
+| `tikz-network` | for drawing network diagrams       |  https://ctan.org/pkg/tikz-network?lang=en  |
 
 
 ## Resources
