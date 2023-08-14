@@ -1,0 +1,38 @@
+%% REQUIRES "transparent" package
+%% i.e. to your preamble,
+%%	\usepackage{transparent}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Local background must be enclosed by curly braces for grouping.
+{
+%\usebackgroundtemplate{\transparent{0.45}\includegraphics[width=\paperwidth]{figs/mp_projs_02}}%
+\usebackgroundtemplate{
+%       \parbox[c][\paperheight][c]{\paperwidth}{\centering\tikz\node[opacity=0.5]{\centering\transparent{0.4}\includegraphics[width=\paperwidth]{figs/mp_projs_02}};}
+        \parbox[c][\paperheight][c]{\paperwidth}{\vspace{5mm}\centering\transparent{0.15}\includegraphics[width=.5\paperwidth,height=0.9\paperheight]{figures/stablediffusion/hpc-racoon-1}\includegraphics[width=.5\paperwidth,height=0.9\paperheight]{figures/stablediffusion/hpc-racoon-12}
+
+                \vspace{-1cm}
+                %\flushright 
+                \flushleft
+                \tiny Image: generated using \url{https://huggingface.co/spaces/stabilityai/stable-diffusion}
+                --
+                Prompt:
+                        ``\textit{raccoon pulling cables and smashing keyboard in supercomputer center, digital art style}''
+                }
+}
+
+
+\begin{frame}
+\frametitle{}
+
+
+\end{frame}
+
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
