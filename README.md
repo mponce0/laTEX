@@ -25,6 +25,7 @@ templates, resources and references
  - [Listings package wiki](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings)
  - [LaTex symbols](https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf)
  - [TikZ Manual and Examples](https://tikz.dev/)
+ - [TikZ.net Examples](https://tikz.net)
  - [LaTex/Tikz Networks](http://mirrors.ibiblio.org/CTAN/graphics/pgf/contrib/tikz-network/tikz-network.pdf)
 
 ---
