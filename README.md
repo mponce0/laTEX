@@ -6,6 +6,7 @@ templates, resources and references
 
   - [beamer/slides](beamer-slides/)
   - [tikz graphics](graphics/tikz)
+  - [how to include PDF pages](receipts/latex_include_PDF_slides.tex)
 
 
 ## Packages
