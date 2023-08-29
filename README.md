@@ -20,6 +20,7 @@ templates, resources and references
 | `quantikz`     | for drawing quantum circuits       |  https://ctan.org/pkg/quantikz?lang=en  |
 | `circuitikzgit`| for drawing electronic circuits    |  https://texdoc.org/serve/circuitikz/0  |
 | `tikz-network` | for drawing network diagrams       |  https://ctan.org/pkg/tikz-network?lang=en  |
+| `tcolorbox`    | for drawing coloured and framed text boxes with a heading line    |  https://www.ctan.org/pkg/tcolorbox  |
 
 
 ## Resources
