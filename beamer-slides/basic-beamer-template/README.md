@@ -25,7 +25,7 @@ Basic beamer/latex template for slides
   \includegraphics[width=\columnwidth, clip=true,trim=l b r t]{figs/fig}
 ```
 
-### for adding an image in the background of the slides:
+### Background Images in slides:
   - includes translucid effect, which requires the `transparent` package
 ```latex
 % Local background must be enclosed by curly braces for grouping.
@@ -42,6 +42,18 @@ Basic beamer/latex template for slides
 \end{frame}
 }
 ```
+  - OR, using `tikz`
+```latex
+{
+\usebackgroundtemplate{
+  \tikz\node[opacity=0.3] {\includegraphics[height=\paperheight,width=\paperwidth]{YOURfigure}};
+  \tikz\node[opacity=0.3] {\includegraphics[height=\paperheight,width=0.45\paperwidth]{YOURotherFIG}};
+\begin{frame}
+...
+\end{frame}
+
+```
+
 
 ## Packages
 * `listings` -- for including code in slides, see configuration in main wrapper
