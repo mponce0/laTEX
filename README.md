@@ -7,6 +7,7 @@ templates, resources and references
   - [latex document template](documents/)
   - [beamer/slides](beamer-slides/)
   - [tikz graphics](graphics/tikz)
+  - [how to use tcolorbox "boxes"](receipts/tcolorbox_example.tex)
   - [how to include PDF pages](receipts/latex_include_PDF_slides.tex)
   - [how to include background images](receipts/latex_background_image.tex)
 
