@@ -12,6 +12,13 @@ templates, resources and references
   - [how to include background images](receipts/latex_background_image.tex)
 
 
+## Templates
+### Books
+  - Tufte -- https://ctan.org/pkg/tufte-latex
+  - Legrand Orange Book
+  - Elegant Book -- https://ctan.org/pkg/elegantbook
+    
+
 ## Packages
 
 | Package        |                                    |    url     |
